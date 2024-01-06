@@ -46,7 +46,7 @@
 </head>
 <body>
 <!-- Preloader Start -->
-<!-- <div id="preloader-active">
+<div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
             <div class="preloader-circle"></div>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <!-- Preloader Start -->
 <header>
     <!-- Header Start -->
@@ -104,7 +104,8 @@
                             <div class="hero__caption">
                                 <span data-animation="fadeInLeft" data-delay=".3s">january 24</span>
                                 <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Kalaivani<strong> & </strong> Mohan</h1>
-                                <p data-animation="fadeInLeft" data-delay=".9s">Celebrating Joy: Baby Shower</p>
+                                <p data-animation="fadeInLeft" data-delay=".9s" style="color: white; text-shadow: 2px 2px 4px rgba(200, 7, 7, 0.8);">Celebrating Joy: Baby Shower</p>     
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -118,7 +119,8 @@
                             <div class="hero__caption">
                                 <span data-animation="fadeInLeft" data-delay=".3s">january 24</span>
                                 <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Kalaivani<strong> & </strong> Mohan</h1>
-                                <p data-animation="fadeInLeft" data-delay=".9s">Celebrating Joy: Baby Shower</p>
+                                <p data-animation="fadeInLeft" data-delay=".9s" style="color: white; text-shadow: 2px 2px 4px rgba(200, 7, 7, 0.8);">Celebrating Joy: Baby Shower</p>         
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -444,6 +446,17 @@
 
     // Update the countdown every second
     setInterval(updateCountdown, 1000);
+</script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the preloader element
+        var preloader = document.getElementById("preloader-active");
+
+        // Set a timeout to hide the preloader after 5 seconds
+        setTimeout(function () {
+            preloader.style.display = "none";
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
 </script>
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
