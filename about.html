@@ -24,7 +24,7 @@
 </head>
 <body>
 <!--? Preloader Start -->
-<!-- <div id="preloader-active">
+<div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
             <div class="preloader-circle"></div>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <!-- Preloader Start -->
 <header>
     <!-- Header Start -->
@@ -223,7 +223,17 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- Jquery Mobile Menu -->
     <script src="./assets/js/jquery.slicknav.min.js"></script>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the preloader element
+        var preloader = document.getElementById("preloader-active");
 
+        // Set a timeout to hide the preloader after 5 seconds
+        setTimeout(function () {
+            preloader.style.display = "none";
+        }, 5000); // 5000 milliseconds = 5 seconds
+    });
+</script>
     <!-- Jquery Slick , Owl-Carousel Plugins -->
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
